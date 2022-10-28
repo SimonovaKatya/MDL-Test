@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="data" action="" class="form">
+        <h1 class="form__title">Preferences</h1>
+        <p class="form__description">
+          On this page you can configure the main system parameters available
+          for customization
+        </p>
+        <div class="form__fields">
+          <div class="field__item">
+            <label class="field__text" for="company_title">Company Title</label>
+            <input id="company_title" type="" class="field__input" name="company_title" />
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="first_day">First Day</label>
+            <select name="first_day" id="first_day" class="field__select">
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+              <option value="system">System</option>
+            </select>
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="container_width">Container Width</label>
+            <select name="container_width" id="container_width" class="field__select">
+              <option value="fixed">Fixed</option>
+              <option value="not_fixed">Not Fixed</option>
+            </select>
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="homepage">Homepage</label>
+            <select name="homepage" id="homepage" class="field__select">
+              <option value="stared_projects">Starred Projects</option>
+              <option value="projects">Projects</option>
+            </select>
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="indent_size">Indent Size</label>
+            <input id="indent_size" type="" class="field__input" name="indent_size" />
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="personal_code">Personal Code</label>
+            <div class="field__group">
+                <input id="personal_code-1" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-1" /> -
+                <input id="personal_code-2" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-2" /> -
+                <input id="personal_code-3" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-3" />
+            </div>
+           
+          </div>
+          <div class="field__item">
+            <label class="field__text" for="theme">Theme</label>
+            <div class="field__theme-selector" name="" id="theme">
+              <input 
+                type="radio" 
+                id="primary" 
+                name="theme" 
+                value="primary" 
+                class="input_theme"
+                /><label for="primary">Light</label>
+              <input
+                type="radio"
+                id="secondary"
+                name="theme"
+                value="secondary"
+                class="input_theme"
+              /><label for="secondary">Dark</label>
+            </div>
+          </div>
+        </div>
+        <button class="form__button button--primary" id="submit" type="submit" form="data">
+          Apply and Save
+        </button>
+        <button class="form__button button--secondary" id="reset" type="reset" form="data">
+          Cancel
+        </button>
+      </form>
+      <footer class="footer">
+        <img src="image/image 44.png" alt="" class="footer__image" />
+        <span class="footer__text">
+          2020-2022
+          <a href="" class="footer__link">Terms of Service</a>
+          and <a href="" class="footer__link">Conditions</a>
+        </span>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary{
+    --bg-color:#b0b5bd;
+    --container-color: #f8f8f8;
+    --title-color: #0B0A0A;
+    --text-color:#585050;
+    --field-bg-сolor:#DFDADA;
+    --field-text-color:#0B0A0A;
+    --btn-primary-bg-color: #2A75DB;
+    --btn-primary-text-color: #F8F8F8;
+    --btn-secondary-bg-color:#F8F8F8;
+    --btn-secondary-text-color: #205EB0;
+    --link-footer-color:#205EB0;
+}
+
+.secondary{
+    --bg-color:#0c0d0d;
+    --container-color: #1e1d1d;
+    --title-color: #F3F3F3;
+    --text-color:#DFDADA;
+    --field-bg-сolor:#585050;
+    --field-text-color:#F3F3F3;
+    --btn-primary-bg-color: #B9D5FC;
+    --btn-primary-text-color: #1E1D1D;
+    --btn-secondary-bg-color:#424242;
+    --btn-secondary-text-color: #AAC9F1;
+    --link-footer-color:#AAC9F1;
+}
+
+body{
+    background: var(--bg-color); 
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-color);
+}
+
+.container{
+    margin-top: 32px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form{
+    margin: 32px;
+}
+
+.form__title{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.form__fields{
+    margin-top: 32px;
+    width: 320px;   
+   
+}
+
+.field__item{
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.field__text{
+    cursor: pointer;
+}
+
+.field__input,
+.field__select{
+    width: 196px;
+    background: var(--field-bg-сolor);
+    color: var(--text-color);
+    border-radius: 6px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.field__group{
+    display: flex;
+    align-items: center;
+    width: 196px;
+    gap: 12px
+}
+
+.field__group__input{
+    width: 47px;
+    background: var(--field-bg-сolor);
+    color: var(--text-color);
+    border-radius: 6px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.form__button{
+    height: 32px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 4px;
+}
+
+.button--primary{
+    background-color: var(--btn-primary-bg-color);
+    color: var(--btn-primary-text-color);
+    width: 115px;
+}
+
+.button--secondary{
+    background-color: var(--btn-secondary-bg-color);
+    color: var(--btn-secondary-text-color);
+    width: 60px;
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+}
+
+.footer__text{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+.footer__link{
+    color: var(--link-footer-color);
+}
