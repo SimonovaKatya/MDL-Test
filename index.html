@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -54,29 +54,33 @@
           <div class="field__item">
             <label class="field__text" for="personal_code">Personal Code</label>
             <div class="field__group">
-                <input id="personal_code-1" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-1" /> -
-                <input id="personal_code-2" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-2" /> -
-                <input id="personal_code-3" type="number" min="0000" max="9999" class="field__group__input" name="personal_code-3" />
+                <input id="personal_code-1" type="number" min="0000" max="9999" class="field__input field__group__input" name="personal_code-1" /> -
+                <input id="personal_code-2" type="number" min="0000" max="9999" class="field__input field__group__input" name="personal_code-2" /> -
+                <input id="personal_code-3" type="number" min="0000" max="9999" class="field__input field__group__input" name="personal_code-3" />
             </div>
            
           </div>
           <div class="field__item">
             <label class="field__text" for="theme">Theme</label>
             <div class="field__theme-selector" name="" id="theme">
-              <input 
-                type="radio" 
-                id="primary" 
-                name="theme" 
-                value="primary" 
-                class="input_theme"
-                /><label for="primary">Light</label>
-              <input
-                type="radio"
-                id="secondary"
-                name="theme"
-                value="secondary"
-                class="input_theme"
-              /><label for="secondary">Dark</label>
+              <div class="theme-selector">
+                  <input 
+                  type="radio" 
+                  id="primary" 
+                  name="theme" 
+                  value="primary" 
+                  class="input_theme"
+                  /><label for="primary">Light</label>
+              </div>
+             <div class="theme-selector">
+                  <input
+                  type="radio"
+                  id="secondary"
+                  name="theme"
+                  value="secondary"
+                  class="input_theme"
+                /><label for="secondary">Dark</label>
+             </div>
             </div>
           </div>
         </div>
@@ -88,7 +92,6 @@
         </button>
       </form>
       <footer class="footer">
-        <img src="image/image 44.png" alt="" class="footer__image" />
         <span class="footer__text">
           2020-2022
           <a href="" class="footer__link">Terms of Service</a>

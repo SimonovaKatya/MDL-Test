@@ -11,6 +11,7 @@
     --container-color: #f8f8f8;
     --title-color: #0B0A0A;
     --text-color:#585050;
+    --border-color:#887c7c;
     --field-bg-сolor:#DFDADA;
     --field-text-color:#0B0A0A;
     --btn-primary-bg-color: #2A75DB;
@@ -25,6 +26,7 @@
     --container-color: #1e1d1d;
     --title-color: #F3F3F3;
     --text-color:#DFDADA;
+    --border-color:#887c7c;
     --field-bg-сolor:#585050;
     --field-text-color:#F3F3F3;
     --btn-primary-bg-color: #B9D5FC;
@@ -76,16 +78,29 @@ body{
 
 .field__text{
     cursor: pointer;
+ 
 }
 
 .field__input,
 .field__select{
+    border: none;
     width: 196px;
+    height: 32px;
     background: var(--field-bg-сolor);
+    border: 1px solid var(--border-color);
     color: var(--text-color);
     border-radius: 6px;
-    height: 32px;
+    padding: 8px ;
     cursor: pointer;
+}
+
+.field__select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
 }
 
 .field__group{
@@ -97,18 +112,33 @@ body{
 
 .field__group__input{
     width: 47px;
-    background: var(--field-bg-сolor);
-    color: var(--text-color);
-    border-radius: 6px;
-    height: 32px;
-    cursor: pointer;
+}
+
+.field__theme-selector{
+    display: flex;
+    width: 196px;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.theme-selector{
+    justify-self: start;
+}
+
+.theme-selector label{
+    margin-left: 8px;
+}
+
+.input_theme{
+    margin-top: 8px;
 }
 
 .form__button{
-    height: 32px;
     font-weight: 500;
     border-radius: 6px;
     padding: 8px 4px;
+    margin-right: 10px;
+    border: none;
 }
 
 .button--primary{
@@ -126,11 +156,19 @@ body{
 .footer{
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 986px;
+    height: 256px;
+    background-image: url(image/footerImg.png);
 }
 
 .footer__text{
     font-family: 'Montserrat', sans-serif;
+    align-self: flex-end;
     color: var(--text-color);
+    margin-bottom: 15px;
 }
 
 .footer__link{
