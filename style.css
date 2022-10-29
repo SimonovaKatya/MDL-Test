@@ -147,10 +147,26 @@ body{
     width: 115px;
 }
 
+.button--primary:focus{
+    outline: var(--border-color);
+}
+
+.button--primary:hover{
+   filter: brightness(150%);
+}
+
 .button--secondary{
     background-color: var(--btn-secondary-bg-color);
     color: var(--btn-secondary-text-color);
     width: 60px;
+}
+
+.button--secondary:focus{
+    outline: var(--border-color);
+}
+
+.button--secondary:hover{
+    filter: brightness(150%);
 }
 
 .footer{
