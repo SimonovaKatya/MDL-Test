@@ -67,16 +67,3 @@ function attachEvent(element, fn) {
 }
 
 checkStorage()
-
-// console.log(formFileds);
-// btn.addEventListener("click", () => {
-//   document
-//     .querySelector(".field__theme-selector")
-//     .addEventListener("change", (event) => {
-//       if (event.target.nodeName === "INPUT") {
-//         document.documentElement.classList.remove("primary", "secondary");
-//         document.documentElement.classList.add(event.target.value);
-//       }
-//     });
-// });
-
