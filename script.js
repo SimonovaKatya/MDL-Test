@@ -33,6 +33,7 @@ function changeHandler() {
     localStorage.setItem(this.name, this.value)
 }
 
+
 function checkStorage() {
     let theme = null
     for (let i = 0; i < formFields.length; i++) {
@@ -43,7 +44,14 @@ function checkStorage() {
                 formFields[i].checked = checked
                 if (checked) theme = formFields[i].value
                 attachEvent(formFields[i], () => themeSwitcher({ theme: formFields[i].value, set: false }))
-            } else {
+            }
+            else if(formFields[i].classList.contains('field__select')) { 
+                const optionIndex = [...formFields[i].options].findIndex(({value}) => value === localStorage.getItem(formFields[i].name))
+                const selectedIndex = optionIndex > -1 ? optionIndex : 0;
+                formFields[i].selectedIndex = selectedIndex;
+                attachEvent(formFields[i], changeHandler)
+            }
+            else {
                 formFields[i].value = localStorage.getItem(formFields[i].name)
                 attachEvent(formFields[i], changeHandler)
             }

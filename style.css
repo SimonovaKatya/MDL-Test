@@ -12,6 +12,7 @@
     --title-color: #0B0A0A;
     --text-color:#585050;
     --border-color:#887c7c;
+    --focus-border-color: #2a75db;
     --field-bg-сolor:#DFDADA;
     --field-text-color:#0B0A0A;
     --btn-primary-bg-color: #2A75DB;
@@ -27,6 +28,7 @@
     --title-color: #F3F3F3;
     --text-color:#DFDADA;
     --border-color:#887c7c;
+    --focus-border-color: #b9d5fc;
     --field-bg-сolor:#585050;
     --field-text-color:#F3F3F3;
     --btn-primary-bg-color: #B9D5FC;
@@ -94,6 +96,13 @@ body{
     cursor: pointer;
 }
 
+.field__input:focus{
+    border: 1px solid var(--focus-border-color);
+}
+.field__select:focus{
+    border: 1px solid var(--focus-border-color);
+}
+
 .field__select{
     appearance: none;
     -webkit-appearance: none;
@@ -121,6 +130,11 @@ body{
     justify-content: start;
 }
 
+.field__hint{
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--text-color);
+}
 .theme-selector{
     justify-self: start;
 }
@@ -131,6 +145,15 @@ body{
 
 .input_theme{
     margin-top: 8px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .form__button{
